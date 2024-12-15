@@ -47,7 +47,6 @@
             gap: 15px;
         }
         .get-start{
-            background-color: white;
             border-radius: 5px;
             border: 1px solid white;
             color: blue;
@@ -67,7 +66,8 @@
         }
         .image2 img{
             height: 80%;
-            width:80%
+            width:80%;
+            padding-left:15%;
         }
         .second{
             display: flex;
@@ -141,7 +141,11 @@
                 width: 100%;
                 height:100%
             }
-            
+            .image2 img{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+            }
             .second{
                 flex-direction: column;
                 padding: 30px 20px
@@ -191,22 +195,27 @@
             
             .content-buttons{
                 flex-direction: column;
+                justify-content: center;
+                align-content: center;
             } 
             
             .get-start{
-                width: 50%;
                 display: flex;
                 justify-content: center;
                 align-content: center;
             }
+            
             .play-button{
                 width: 5%;
                 display: flex;
                 justify-content: center;
-                align-content: justify;
+                align-content: center;
             }
             .watch{
                 padding-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
             }
             .second{
                 flex-direction: column;
@@ -215,6 +224,11 @@
             .sub{
                 flex-direction: column;
                 gap: 10px;
+            }
+            .image2 img{
+                display: flex;
+                justify-content: center;
+                align-content: center;
             }
                  
         }
@@ -248,15 +262,17 @@
                     we are technology as a tool to create amazing things. </p>
                 <div class="content-buttons">
                     <div class="get-start" >
-                        <p style="padding: 5px 10px; font-size: 10px;text-align: center;"><b>GET STARTED</b></p>
+                        <button style="padding: 5px 10px; font-size: 10px;text-align: center; background-color: white;"><b>GET STARTED</b></button>
                     </div>
-                    <div class="play-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-play" viewBox="0 0 16 16">
-                            <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
-                          </svg>
+                    <div style="display: flex;justify-content: center;">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-play" viewBox="0 0 16 16">
+                                <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
+                            </svg>
+                        </div>
                     </div>
                     <div class="watch">
-                        <p style="color: white;">Watch Here</p>
+                        <a style="color: white;">Watch Here</a>
                     </div>
                 </div>
             </div>
@@ -268,6 +284,7 @@
 
     <div class="main2">
         <div class="second">
+            
             <div class="image2">
                 <img src="hero.png" alt="">
             </div>
